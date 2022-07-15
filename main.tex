@@ -4,6 +4,9 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{hyperref}
 \usepackage[capitalize]{cleveref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
 
 \newcommand{\IM}{i} % change i with j for electrical engineering
 \newcommand{\EXP}[1]{e^{#1}} % comment for \exp instead of e^{}
@@ -31,6 +34,15 @@ a book reference of~\autocite{knuth1997art}.
 	\EXP{\IM\theta}  & = \cos(\theta)+\IM\sin(\theta)~\label{eq:general} \\
 	1 + \EXP{\IM\pi} & = 0~\label{eq:special}
 \end{align}
+In addition, an image and a table are also provided in~\cref{fig:space}
+and~\cref{tab:mytable}, respectively.
+\begin{figure}[h]
+	\centering{}
+	\includegraphics[width=0.5\linewidth]{images/space.jpg}
+	\caption{Stock Image by Jeremy Thomas
+		(\href{https://bit.ly/3AUuKM7}{link})}\label{fig:space}
+\end{figure}
+\input{my_table.tex}
 
 \printbibliography{}
 \end{document}
