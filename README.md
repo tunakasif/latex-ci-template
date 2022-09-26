@@ -7,7 +7,8 @@
 
 # LaTeX-CI Template
 
-Template for writing CI enabled LaTeX documents. State of the LaTeX project is saved along with the current state's PDF output as release assets, according to the version number provided with a [git-tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+Template for writing CI enabled LaTeX documents. According to the version number provided with a [git-tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging), state of the LaTeX project and its PDF output are saved as release assets.
+
 
 ## Usage
 
