@@ -13,9 +13,12 @@ jobs:
       - name: Compile LaTeX Document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex
+          work_in_root_file_dir: true
+          root_file: |
+            src/main.tex
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           generate_release_notes: true
-          files: main.pdf
+          files: |
+            src/main.pdf
